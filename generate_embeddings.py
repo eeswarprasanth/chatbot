@@ -7,7 +7,7 @@ from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Initialize a text splitter for chunking PDF and DOCX content
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
 # Load PDF files and split them into chunks with metadata (page number)
 def load_pdf(file_path):
